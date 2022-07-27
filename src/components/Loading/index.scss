@@ -1,0 +1,32 @@
+.loading{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0, .3);
+  z-index: 999;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      object-fit: contain;
+      height: 50px;
+      width: auto;
+      animation: passingby 1s infinite;
+    }
+  
+    span{
+      font-size: 1rem;
+      padding: 20px 0;
+      color: #fff;
+    }
+  }
+
+}

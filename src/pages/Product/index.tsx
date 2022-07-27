@@ -1,12 +1,10 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { gql, useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
-import Header from '../../components/Header';
 import { Sprite, Type } from '../../types/pokemon';
 import Breadcrumb from '../../components/Breadcrumb';
 
 import './index.scss';
-import { usePrice } from '../../Hooks';
 import Price from '../../components/Price';
 
 const GET_POKEMON_BY_ID = gql`
